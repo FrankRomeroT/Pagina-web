@@ -2632,4 +2632,58 @@ input, select, textarea {
 				}
 
 	}
-		
+	/* Botón 'Más Información' */
+	.item button {
+		display: block;
+		width: auto; /* Ajusta el ancho del botón según el contenido */
+		margin: 1em auto; /* Esto centrará el botón horizontalmente y agrega un margen superior */
+		padding: 0.5em 1em; /* Ajusta el relleno como necesites */
+		background: #45504f; /* Color de fondo del botón */
+		color: white; /* Color de texto del botón */
+		border: none; /* Elimina el borde */
+		cursor: pointer; /* Cambia el cursor a puntero */
+		font-size: 0.8em; /* Ajusta el tamaño del texto */
+		transition: background-color 0.3s ease; /* Transición suave para el hover */
+		text-align: center; /* Asegura que el texto dentro del botón esté centrado */
+		border-radius: 4px; /* Opcional: para bordes redondeados */
+	  }
+	  
+	  .item button:hover {
+		background-color: #9ececc; /* Color de fondo del botón al pasar el mouse */
+	  }
+
+/* Modal */
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed; /* Fijo en la pantalla */
+  z-index: 1000; /* Encima de otros elementos */
+  left: 0;
+  top: 0;
+  width: 100%; /* Ancho completo */
+  height: 100%; /* Alto completo */
+  overflow: auto; /* Permite scroll si el contenido es muy largo */
+  background-color: rgba(0, 0, 0, 0.4); /* Color de fondo semitransparente */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* Centra el modal */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Ancho del contenido del modal */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+}
+
+/* Botón de cerrar */
+.close {
+  color: #aaa;
+  float: right; /* Ubica el botón a la derecha */
+  font-size: 28px; /* Tamaño del icono de cerrar */
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

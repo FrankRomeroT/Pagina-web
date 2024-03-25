@@ -121,3 +121,43 @@
 				});
 
 })(jQuery);
+
+// Obtén todos los botones que abren modales y añade evento onclick
+document.getElementById("btnResiduosMunicipales").onclick = function() {
+	document.getElementById("modalResiduosMunicipales").style.display = "block";
+  }
+  document.getElementById("btnCorazon").onclick = function() {
+	document.getElementById("modalCorazon").style.display = "block";
+  }
+  document.getElementById("btnAirbnb").onclick = function() {
+	document.getElementById("modalAirbnb").style.display = "block";
+  }
+  document.getElementById("btnPaisesVivir").onclick = function() {
+	document.getElementById("modalPaisesVivir").style.display = "block";
+  }
+  document.getElementById("btnCriptomonedas").onclick = function() {
+	document.getElementById("modalCriptomonedas").style.display = "block";
+  }
+  document.getElementById("btnContaminacionAire").onclick = function() {
+	document.getElementById("modalContaminacionAire").style.display = "block";
+  }
+  
+  // Obtén todos los elementos <span> que cierran los modales
+  var closeSpans = document.getElementsByClassName("close");
+  
+  // Añade evento onclick a cada <span> para cerrar el modal correspondiente
+  for (var i = 0; i < closeSpans.length; i++) {
+	closeSpans[i].onclick = function() {
+	  var modal = this.closest('.modal');
+	  modal.style.display = "none";
+	}
+  }
+  
+  // Cierra el modal si el usuario hace clic fuera de él
+  window.onclick = function(event) {
+	if (event.target.classList.contains('modal')) {
+	  event.target.style.display = "none";
+	}
+  }
+  
+
