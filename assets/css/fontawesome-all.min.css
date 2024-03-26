@@ -3,7 +3,12 @@
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 
-
+  /* Estilos para los íconos */
+  .fab.fa-python { color: #3776AB; } /* Color para el ícono de Python */
+  .fas.fa-file-excel { color: #217346; } /* Color para el ícono de Excel */
+  .fas.fa-database { color: #f8c200; } /* Color para el ícono de base de datos */
+  .fas.fa-chart-bar { color: #ff6384; } /* Color para el ícono de gráficos */
+  
 
 
 
