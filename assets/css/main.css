@@ -130,9 +130,10 @@ input, select, textarea {
 		letter-spacing: -1px;
 	}
 
-		h2.alt {
-			color: #3a2424;
-		}
+	h2.alt {
+		color: #272525; /* Cambia a blanco o el color que prefieras */
+		text-shadow: 0 1px 0 rgba(156, 71, 71, 0.2); /* Sombra de texto opcional para mejorar la legibilidad */
+	}
 		
 
 			h2.alt strong {
@@ -2249,7 +2250,7 @@ input, select, textarea {
 
 			#main > section.one {
 				background-color: #81918E;
-				background-image: url("../../images/Fondo.png");
+				background-image: url("../../images/Fondo.webp");
 			}
 
 			#main > section.two {
